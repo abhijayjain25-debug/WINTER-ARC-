@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
   <meta name="theme-color" content="#09121e"><meta name="description" content="Your private Winter Arc study basecamp. Focus, practise, review, and level up.">
   <title>Winter Arc — Study Basecamp</title>
   <link rel="icon" type="image/png" href="assets/winter-arc-icon.png">
   <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="motion.css">
-  <script defer src="data.js"></script><script defer src="core.js"></script><script defer src="custom.js"></script><script defer src="disk.js"></script><script defer src="profile.js"></script><script defer src="life.js"></script><script defer src="app.js"></script><script defer src="motion.js"></script>
+  <script defer src="data.js"></script><script defer src="core.js"></script><script defer src="custom.js"></script><script defer src="disk.js"></script><script defer src="syllabus.js"></script><script defer src="profile.js"></script><script defer src="life.js"></script><script defer src="app.js"></script><script defer src="motion.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to study workspace</a>
@@ -26,6 +26,7 @@
 <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
 <dialog id="tutorial" aria-labelledby="tutorial-title"></dialog>
 <dialog id="celebration" aria-labelledby="celebration-title"></dialog>
+<input type="file" id="syllabus-file" accept=".pdf,.docx,.txt,.md,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
 <input type="file" id="import-file" accept="application/json,.json" hidden>
 <script>if(location.protocol==='file:')document.documentElement.dataset.direct='true';</script>
 </body></html>
