@@ -80,3 +80,9 @@ Generate one transparent full-body anime fan-art character sprite for a study pl
 
 Generate one transparent full-body anime fan-art character sprite for a study planner. Frost attached is STYLE REFERENCE ONLY: match detailed crisp square pixel art, cute chibi proportions, large anime eyes, sophisticated pixel shading. Centered entire head and boots visible, character about 75% canvas height. True transparent background, no text, scenery, UI, other characters or soft vector/painted rendering. Recognizable named character with accurate signature traits. Asta from Black Clover, Devil Union form: recognizable ash-grey spiky hair and fierce human face, four small dark horns, black angular anti-magic armor with red-orange accents, black wings folded close behind silhouette, broad dark sword, compact red anti-magic sparks. Full-body cute detailed chibi.
 
+
+## Gojo final-form outfit update
+
+Saved as assets/gojo-3.png. Built-in image editing tool; original Gojo sprite used as edit target.
+
+Use case: identity-preserve. Edit target: the attached Gojo final-evolution pixel sprite. Change ONLY his outfit to Satoru Gojo's Shinjuku showdown outfit during the Sukuna fight: fitted plain BLACK SHORT-SLEEVE CREW-NECK T-SHIRT showing forearms and a muscular torso in the same cute chibi proportions, loose voluminous WHITE MARTIAL-ARTS TROUSERS with a dark waist sash/belt, and black slip-on martial arts shoes. Remove the high collar jacket, dark trousers and tall boots. Preserve exactly his recognizable white spiky hair, uncovered brilliant blue Six Eyes, confident smile, chibi body proportions, detailed crisp square pixel shading, centered full-body framing, forward-facing hand holding the swirling glowing HOLLOW PURPLE orb, and violet energy particles around the silhouette. Keep full head and shoes visible, same margins and transparent background. No scenery, text, other characters, wounds or blood.
