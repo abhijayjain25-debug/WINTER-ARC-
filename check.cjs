@@ -67,3 +67,18 @@ assert.doesNotThrow(()=>C.validate(bonus));bonus.weeklyGoals[0].logs[0].amount=1
 bonus.workouts[0].category='unknown';assert.throws(()=>C.validate(bonus));
 console.log('PASS: custom profiles, exam scales, workout caps, weekly repeat protection and goal validation.');
 require('./disk-check.cjs')().catch(e=>{console.error(e);process.exitCode=1;});
+
+assert.equal(X.dailyQuote('2026-09-30'),'Quiet days. Stronger tomorrow.');
+assert.notEqual(X.dailyQuote('2026-10-01'),X.dailyQuote('2026-09-30'));
+assert.equal(X.dailyQuote('2026-10-01'),X.dailyQuote('2026-10-01'));
+assert.equal(new Set(Array.from({length:20},(_,i)=>X.dailyQuote(C.addDays('2026-10-01',i)))).size,20);
+for(const p of X.companions){
+ for(const [level,tier] of [[1,0],[9,0],[10,1],[24,1],[25,2]]){
+  const form=X.companionForm(p.id,level);assert.equal(form.tier,tier);
+  assert(fs.existsSync(__dirname+'/assets/'+form.asset),'Missing sprite: '+form.asset);
+ }
+ const saved=JSON.parse(JSON.stringify(custom));saved.settings.companion=p.id;assert.doesNotThrow(()=>C.validate(saved));
+}
+assert.equal(X.companionForm('jinwoo',25).asset,'jinwoo-3.png');
+assert.equal(X.companionForm('naruto',10).form,'Sage Mode');
+console.log('PASS: daily quote preservation, stable shuffled rotation, all companion assets and evolution boundaries.');

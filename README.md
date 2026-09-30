@@ -42,7 +42,7 @@ No study records are uploaded to GitHub, Vercel or a shared database. Hosting se
 - **Focus chamber:** choose 25, 30, 35, 40, 50 or 90 minutes, or custom whole minutes from 1 to 1440. Pause interruptions, then confirm actual study time and a work note. Log offline work without duplicating timer sessions.
 - **Sound:** the four-note completion chime is enabled by default. Preview it with Test chime or mute it separately from level-up sounds. Keep the tab open, unmuted and your device awake.
 - **Mock lab:** record your own exam or course test on its configured score scale, compare similar papers and analyse mistakes. Keep specific repairs in the reattempt queue.
-- **Companions:** choose Frost, Pip the penguin, Flurry the arctic fox or Byte the robot. The companion shares your level; selection does not change your XP. Add your own art through `custom.js` and `assets/` when forking.
+- **Companions:** choose Frost, Pip, Flurry, Byte, Ember (burgundy), Aurora (purple), Summit (green), Sung Jinwoo, Naruto, Gojo, Ichigo or Asta. Levels 10 and 25 unlock new forms automatically: anime companions change sprites, while original companions gain stronger auras. These are progression milestones for the planner, not a complete retelling of the series. The companion shares your level; selection does not change your XP. Add your own art through `custom.js` and `assets/` when forking.
 - **Appearance:** dark and light modes, glass surfaces, layered snowfall and gentle animations. The header snowflake toggles ambient motion. System reduced-motion preferences take priority. Quiet mode softens effects.
 - **Field guide:** editable preparation notes. Blank profiles receive a general guide; the JEE/law template has its own chapter plan. Template dates must be checked against official timetables.
 
@@ -89,4 +89,6 @@ The published app is entirely static. Each visitor gets their own file or option
 
 Run `node check.cjs` for progression, schema, migration compatibility, custom profiles and real temporary-file persistence checks. Run `node build.cjs` to assemble static assets. Test UI using `?sandbox=1`; `?sandbox=your-test-name` creates another isolated test workspace. Never commit personal planner files or backups.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). MIT licensed: fork it, customize it, share it and retain the license notice. The original banner and Frost PNG are AI-generated assets made for this project; additional pixel companions are original SVG artwork.
+See [CONTRIBUTING.md](CONTRIBUTING.md). MIT licensed: fork it, customize it, share it and retain the license notice. The original banner and Frost PNG are AI-generated assets made for this project; the human companions use generated pixel art. Anime companions are unofficial fan art; their characters belong to their respective owners. The MIT license covers project code and original artwork, not ownership of those characters.
+
+Daily banner mottos rotate through a date-seeded shuffled set of original study quotes. Each local calendar day keeps one quote; the rotation needs no account or extra saved data. September 30, 2026 keeps the original “Quiet days. Stronger tomorrow.”

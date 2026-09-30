@@ -8,4 +8,4 @@ Preserve keyboard access, visible labels, light/dark themes and reduced motion. 
 
 `app.js` renders the main study workspace; `profile.js` manages onboarding, customization and tutorial; `life.js` manages workouts and weekly goals; `core.js` validates data and computes progression; `disk.js` manages user-approved local files. `custom.js` holds companion metadata and profile parsers. `build.cjs` has an explicit public-file list.
 
-Companion PNGs and banner PNG are AI-generated original assets for this project. Additional pixel companions are SVG artwork authored for this project. Keep the MIT license notice when distributing modifications.
+Companion PNGs and banner PNG are AI-generated original assets for this project. Additional human companions are generated pixel artwork. Anime characters are unofficial fan art and belong to their respective owners; MIT does not grant ownership of those characters. Keep the MIT license notice when distributing modifications.
