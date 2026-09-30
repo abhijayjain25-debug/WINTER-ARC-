@@ -89,3 +89,4 @@ assert.equal(C.focusMinutes(timeHistory),140);
 assert.equal(C.focusMinutes({sessions:[]}),0);
 assert.equal(C.focusMinutes(timeHistory,'2026-10-01'),0);
 console.log('PASS: daily and lifetime study time, including backdated logs and empty history.');
+require('./motion-check.cjs');

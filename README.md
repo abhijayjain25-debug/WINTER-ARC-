@@ -94,3 +94,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). MIT licensed: fork it, customize it, sha
 Daily banner mottos rotate through a date-seeded shuffled set of original study quotes. Each local calendar day keeps one quote; the rotation needs no account or extra saved data. September 30, 2026 keeps the original “Quiet days. Stronger tomorrow.”
 
 Basecamp and Focus chamber show **Studied today** and **Lifetime study time** in hours and minutes. Totals use completed, saved timer sessions and offline study logs, including backdated entries. Running timers count after Finish & log. Time totals are independent of XP caps; workouts and separately entered mock durations do not add study time. Log a mock as a study session if you want its time included, without duplicating a session you already logged.
+
+Rendering uses static glass gradients without backdrop blur, skips offscreen chapter contents, and lazy-loads companion choices. Snow draws at at most 24 fps with 60 particles and pauses while scrolling or when the tab is hidden. Turning ambient motion off stops snow and animations. Timer updates avoid rewriting hidden controls.

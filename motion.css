@@ -53,3 +53,12 @@ body.page-hidden *,body.page-hidden *::before,body.page-hidden *::after{animatio
 body.still .reveal-pending{opacity:1!important}
 
 .evolution-reveal{width:180px;height:180px;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 0 18px #b987ff60)}.motion-on .evolution-reveal{animation:evolution-in .9s var(--ease-out)}@keyframes evolution-in{from{opacity:0;transform:translateY(15px) scale(.65);filter:brightness(2) drop-shadow(0 0 30px #b987ff)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+/* Gradients keep the glass appearance without repeatedly blurring page pixels. */
+.card,.sidebar,.topbar,#timer-dock,#back-to-top{backdrop-filter:none;-webkit-backdrop-filter:none}
+dialog::backdrop{backdrop-filter:none;-webkit-backdrop-filter:none}
+.motion-on .brand-icon{animation:none}
+.motion-on .card{transition:border-color .25s,transform .25s var(--ease-out)}
+.chapter{content-visibility:auto;contain-intrinsic-size:auto 190px}
+.topbar,.has-scrolled .topbar{background:#0b1420}
+[data-theme=light] .topbar,[data-theme=light] .has-scrolled .topbar{background:#f3f9fc}

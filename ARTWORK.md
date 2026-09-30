@@ -86,3 +86,9 @@ Generate one transparent full-body anime fan-art character sprite for a study pl
 Saved as assets/gojo-3.png. Built-in image editing tool; original Gojo sprite used as edit target.
 
 Use case: identity-preserve. Edit target: the attached Gojo final-evolution pixel sprite. Change ONLY his outfit to Satoru Gojo's Shinjuku showdown outfit during the Sukuna fight: fitted plain BLACK SHORT-SLEEVE CREW-NECK T-SHIRT showing forearms and a muscular torso in the same cute chibi proportions, loose voluminous WHITE MARTIAL-ARTS TROUSERS with a dark waist sash/belt, and black slip-on martial arts shoes. Remove the high collar jacket, dark trousers and tall boots. Preserve exactly his recognizable white spiky hair, uncovered brilliant blue Six Eyes, confident smile, chibi body proportions, detailed crisp square pixel shading, centered full-body framing, forward-facing hand holding the swirling glowing HOLLOW PURPLE orb, and violet energy particles around the silhouette. Keep full head and shoes visible, same margins and transparent background. No scenery, text, other characters, wounds or blood.
+
+
+### Desktop icon
+Generated with the built-in imagegen tool (new image, transparent background). Source: `assets/winter-arc-icon.png`; Windows/browser package: `assets/winter-arc.ico` (16–256 px).
+
+Prompt: Create a premium desktop app icon for Winter Arc, a gamified winter study planner. One bold pixel-art ice crystal/snowflake above a tiny angular icy mountain peak, resembling a game achievement badge. Large crisp pixel clusters, legible at 32 pixels, icy cyan and white on a midnight navy rounded-square tile, restrained blue edge glow, generous padding. No words, letters, fine tiny details, extra symbols or scenery. Transparent outside the opaque tile; centered symmetrical silhouette. ICO packaging uses Pillow; no creative image edits.
