@@ -9,7 +9,7 @@ const threshold=l=>100*(l-1)**2;
 const totalXP=s=>s.ledger.reduce((n,x)=>n+x.xp,0);
 const crystals=s=>Math.max(0,Math.floor(totalXP(s)/10)-s.redemptions.reduce((n,r)=>n+r.cost,0));
 const canMaster=c=>c.checks.length>=2&&c.checks.slice(-2).every(x=>x.total>=10&&x.correct/x.total>=.75);
-const focusMinutes=(s,date)=>s.sessions.filter(x=>x.date===date).reduce((n,x)=>n+x.minutes,0);
+const focusMinutes=(s,date)=>s.sessions.filter(x=>date===undefined||x.date===date).reduce((n,x)=>n+x.minutes,0);
 const streak=(s,today=day())=>{let d=focusMinutes(s,today)>=25?today:addDays(today,-1),n=0;while(focusMinutes(s,d)>=25&&n<10000){n++;d=addDays(d,-1);}return n;};
 function award(s,id,xp,kind,date=day()){if(s.ledger.some(x=>x.id===id))return 0;const caps={focus:360,quest:30,mock:20,analysis:80,review:20,workout:25,weekly:200};const used=s.ledger.filter(x=>x.kind===kind&&(kind==='weekly'?weekStart(x.date)===weekStart(date):x.date===date)).reduce((n,x)=>n+x.xp,0);const value=Math.max(0,Math.min(Math.floor(xp),(caps[kind]??Infinity)-used));s.ledger.push({id,xp:value,kind,date});return value;}
 const weekStart=(date=day())=>addDays(date,-((dateObject(date).getDay()+6)%7));

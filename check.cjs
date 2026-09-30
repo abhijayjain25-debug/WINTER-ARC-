@@ -82,3 +82,10 @@ for(const p of X.companions){
 assert.equal(X.companionForm('jinwoo',25).asset,'jinwoo-3.png');
 assert.equal(X.companionForm('naruto',10).form,'Sage Mode');
 console.log('PASS: daily quote preservation, stable shuffled rotation, all companion assets and evolution boundaries.');
+
+const timeHistory={sessions:[{date:'2026-09-30',minutes:25},{date:'2026-09-30',minutes:25},{date:'2026-09-29',minutes:90}]};
+assert.equal(C.focusMinutes(timeHistory,'2026-09-30'),50);
+assert.equal(C.focusMinutes(timeHistory),140);
+assert.equal(C.focusMinutes({sessions:[]}),0);
+assert.equal(C.focusMinutes(timeHistory,'2026-10-01'),0);
+console.log('PASS: daily and lifetime study time, including backdated logs and empty history.');
