@@ -1,0 +1,22 @@
+name: Suggest an improvement
+description: A change that would make studying simpler or more useful.
+title: "[Idea]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What study problem are you trying to solve?
+      placeholder: "Describe the situation, rather than only naming a feature."
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would help?
+      description: "Explain how it fits a study session and avoids extra planning work."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Optional examples or alternatives

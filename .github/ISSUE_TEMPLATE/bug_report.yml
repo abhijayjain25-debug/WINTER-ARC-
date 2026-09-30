@@ -1,0 +1,44 @@
+name: Report a bug
+description: Something interrupted your setup, saving, or study session.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for testing Winter Arc. Do not upload private planner JSON files, tokens, or screenshots containing personal records. Use a sandbox or remove personal details first."
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: "Android / Chrome, iPhone / Safari, or Windows / Edge (include versions if known)"
+    validations:
+      required: true
+  - type: dropdown
+    id: running
+    attributes:
+      label: How are you using Winter Arc?
+      options:
+        - Hosted website
+        - Local launcher / server
+        - My own fork or deployment
+    validations:
+      required: true
+  - type: dropdown
+    id: storage
+    attributes:
+      label: Save method
+      options:
+        - Browser storage
+        - Selected JSON file
+        - Not sure
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened, and how can we reproduce it?
+      placeholder: "1. Open Focus chamber\n2. Choose…\nExpected…\nInstead…"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional screenshot or error message
+      description: "Remove names and private records. Mention whether the issue also occurs in a fresh sandbox."

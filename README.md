@@ -1,8 +1,58 @@
 # Winter Arc
 
-A customizable, open-source study basecamp with winter pixel art, a focus timer, syllabus tracking, exam countdowns, workouts and weekly goals. Built with plain HTML, CSS and JavaScript. No accounts, database, API keys, analytics or runtime dependencies.
+**Study. Level up. Make your comeback.**
 
-![Winter Arc landscape](assets/winter-banner.png)
+A free, open-source study planner with a winter pixel-art basecamp, evolving companions, focus sessions, and a syllabus you can make your own. Built for entrance exams, college courses, and independent study.
+
+**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.1)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
+
+No account, subscription, shared database, analytics, or API key. Your study records stay on your device. The hosted app is easiest to try on a phone; the local download requires Node.js.
+
+![Winter Arc — your study season with evolving pixel companions](docs/images/social-preview.jpg)
+
+## What makes it different?
+
+- **A companion for your comeback.** Honest study earns XP, ranks, achievements, and new companion forms at levels 10 and 25.
+- **Your syllabus, not a fixed course.** Start blank or choose the JEE + CLAT/AILET template. Import a PDF, Word `.docx`, or text syllabus, review the topics, and assign them to your own course.
+- **Focus that counts.** Custom timers, completion chimes, daily/lifetime study totals, and offline session logging.
+- **A plan you can revise.** Editable chapters, weekly roadmaps, countdowns, practice checks, mock analysis, and a revision queue.
+- **A stronger week.** Log workouts, set a measurable weekly goal, and earn optional rewards through actual effort.
+- **Your data belongs to you.** Browser storage or a user-selected local JSON file in supported browsers, with export/restore backups. No automatic cloud sync.
+- **Winter, in both themes.** Dark/light modes, pixel art, gentle snow, reduced-motion support, and labeled phone navigation.
+
+## Try it in two minutes
+
+1. Open **[wintercarc.vercel.app](https://wintercarc.vercel.app/)**.
+2. Enter your own name. Choose **Blank** for college or another course, or the optional JEE/law template.
+3. Add your subjects or use **Study map → Import syllabus**. Review extracted topics before adding them.
+4. Pick one task and start a focus session. Finish & log the actual work to earn XP.
+5. Check your save method in Settings and download a backup. Browser data can be erased if you clear site data.
+
+Phones use the website; this release is not an APK or installable PWA. Device-file autosave depends on browser support. Locked/backgrounded phones may silence completion sounds. Scanned PDFs need text recognition elsewhere first. Full details are below.
+
+## See it in action
+
+[Watch the 24-second feature tour](docs/images/winter-arc-tour.mp4) · [Animated screenshot tour](docs/images/winter-arc-tour.gif)
+
+| Your basecamp | Focus chamber |
+| --- | --- |
+| ![Daily/lifetime time, your season and exam countdowns](docs/images/basecamp.jpg) | ![Focus timer and recent study sessions](docs/images/focus.jpg) |
+
+| College syllabus | Review before importing |
+| --- | --- |
+| ![An editable Computer Science syllabus](docs/images/syllabus.jpg) | ![PDF topics reviewed before being added](docs/images/import-review.jpg) |
+
+| Choose your companion | Phone layout |
+| --- | --- |
+| ![Pixel companion choices](docs/images/companions.jpg) | <img src="docs/images/phone.jpg" alt="Winter Arc in a 390-pixel embedded browser preview" width="210"> |
+
+Screenshots and the screenshot-based tour use a fictional demo profile. Demonstrated XP, records, and progress are not exam results or score promises. New users start with their own profile and no imported personal progress.
+
+## Help shape the beta
+
+Use it for a week and tell us where you get stuck: saving, phone layout, importing a college document, or fitting your routine. [Open an issue](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose) or [join Discussions](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions). Include your browser/device and reproducible steps, not private planner files.
+
+If Winter Arc helps you, **[star the repository](https://github.com/abhijayjain25-debug/WINTER-ARC-)** so other students can discover it. Want to contribute? See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Use it locally
 
@@ -106,3 +156,8 @@ Publish the static build to HTTPS for phone use; the Windows launcher is for com
 In **Study map → Import syllabus**, or **Settings → Import PDF / Word**, choose a text-based PDF, Word `.docx`, or plain `.txt` / `.md` file. The document is read on your device. Review the extracted text, keep one topic per line, remove unwanted headings, and choose an existing subject or enter a new course name. Confirm **Add reviewed topics** to append them to your own profile. Existing progress stays intact; duplicates within a subject are skipped without awarding XP. Paste syllabus remains available for manual entry.
 
 Imports accept up to 10 MB, 100 PDF pages, and 100,000 extracted characters. Add up to 200 reviewed topics at a time, each up to 200 characters. Expanded Word archives are limited to 30 MB. Scanned PDFs/photos need text recognition elsewhere first; older `.doc` files must be saved as `.docx`. Complex columns/tables may need manual cleanup. Reader code is bundled locally and loaded only when that document format is used; no document upload, external AI, or database is involved. See [THIRD-PARTY.md](THIRD-PARTY.md).
+
+
+Built by Abhijay while preparing for exams. This project is a work in progress, shaped by actual study needs and feedback.
+
+When deploying your own fork, update the canonical, Open Graph, and Twitter URLs in `index.html` to your deployment URL.

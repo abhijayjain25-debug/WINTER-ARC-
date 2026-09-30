@@ -92,3 +92,7 @@ Use case: identity-preserve. Edit target: the attached Gojo final-evolution pixe
 Generated with the built-in imagegen tool (new image, transparent background). Source: `assets/winter-arc-icon.png`; Windows/browser package: `assets/winter-arc.ico` (16–256 px).
 
 Prompt: Create a premium desktop app icon for Winter Arc, a gamified winter study planner. One bold pixel-art ice crystal/snowflake above a tiny angular icy mountain peak, resembling a game achievement badge. Large crisp pixel clusters, legible at 32 pixels, icy cyan and white on a midnight navy rounded-square tile, restrained blue edge glow, generous padding. No words, letters, fine tiny details, extra symbols or scenery. Transparent outside the opaque tile; centered symmetrical silhouette. ICO packaging uses Pillow; no creative image edits.
+
+## Launch visuals
+
+`docs/social-card.html` composes the existing winter banner and Frost artwork with HTML/CSS. `docs/images/social-preview.jpg` is its native browser screenshot, also copied to `assets/social-preview.jpg` for website sharing. App screenshots use a fictional demo profile; `phone.jpg` captures the app inside a 390-pixel browser iframe. The MP4/GIF tour encodes six actual app screenshots, four seconds each, with no fabricated interactions.
