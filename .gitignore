@@ -1,0 +1,11 @@
+dist/
+node_modules/
+.vercel/
+*.log
+.DS_Store
+Thumbs.db
+winter-arc.json
+*backup*.json
+*planner*.json
+.env
+.env.*
