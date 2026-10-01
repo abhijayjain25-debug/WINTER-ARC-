@@ -1,8 +1,19 @@
-# Winter Arc v0.1.0 beta — first public release
+# Winter Arc v0.1.0 beta.2 — college handbook imports
 
 A free, open-source study basecamp with winter pixel art and companions that evolve as you earn study XP. Customize it for entrance exams, college, or your own course.
 
 **Try it now:** https://wintercarc.vercel.app/
+
+## New in beta.2
+
+- PDF imports up to 100 MB and 1,000 pages; Word up to 25 MB.
+- Suggested year/semester sections and course titles from common headings and codes.
+- Editable previews per course; import one semester or selected courses across all sections.
+- Filter common filler and recover the full extracted text using manual review.
+- Import selected courses atomically, with duplicate skipping and source references. Existing study data and XP stay intact.
+- Reading progress and cancellation; tested a synthetic 120-page, 11 MB PDF, Word documents and a 390-pixel phone preview.
+
+Detection uses local rules and needs review. Scanned PDFs still need OCR elsewhere. No external AI, file uploads or new database.
 
 ## Included
 

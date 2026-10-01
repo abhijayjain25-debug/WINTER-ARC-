@@ -4,7 +4,7 @@
 
 A free, open-source study planner with a winter pixel-art basecamp, evolving companions, focus sessions, and a syllabus you can make your own. Built for entrance exams, college courses, and independent study.
 
-**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.1)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
+**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.2)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
 
 No account, subscription, shared database, analytics, or API key. Your study records stay on your device. The hosted app is easiest to try on a phone; the local download requires Node.js.
 
@@ -40,7 +40,7 @@ Phones use the website; this release is not an APK or installable PWA. Device-fi
 
 | College syllabus | Review before importing |
 | --- | --- |
-| ![An editable Computer Science syllabus](docs/images/syllabus.jpg) | ![PDF topics reviewed before being added](docs/images/import-review.jpg) |
+| ![An editable Computer Science syllabus](docs/images/syllabus.jpg) | ![Semester and course topics reviewed before being added](docs/images/semester-review.jpg) |
 
 | Choose your companion | Phone layout |
 | --- | --- |
@@ -153,9 +153,12 @@ The phone layout has five labeled bottom tabs: Home, Study, Focus, Life, and Mor
 
 Publish the static build to HTTPS for phone use; the Windows launcher is for computers. Each visitor gets their own profile. Browser storage stays on the device but can be erased when site data is cleared; download backups regularly. File autosave is available only when the browser supports the required pickers. There is no automatic cross-device sync. A phone can suspend timer sounds while locked or backgrounded; the countdown catches up when the page resumes, and study still requires Finish & log.
 
-In **Study map → Import syllabus**, or **Settings → Import PDF / Word**, choose a text-based PDF, Word `.docx`, or plain `.txt` / `.md` file. The document is read on your device. Review the extracted text, keep one topic per line, remove unwanted headings, and choose an existing subject or enter a new course name. Confirm **Add reviewed topics** to append them to your own profile. Existing progress stays intact; duplicates within a subject are skipped without awarding XP. Paste syllabus remains available for manual entry.
+In **Study map → Import syllabus**, or **Settings → Import PDF / Word**, choose a text-based PDF, Word `.docx`, or plain `.txt` / `.md` file. Winter Arc reads it on your device and suggests year/semester sections and courses from common headings and course codes. Select the semester you need (or all detected sections), uncheck unwanted courses, and edit each subject name and its topics. Semester changes keep your draft edits. Confirm **Import selected courses** only after reviewing the suggestions. Existing progress stays intact, duplicate topics within a subject are skipped, and no XP is awarded for importing. Each imported topic keeps its source document, detected period and course starting page in its notes.
 
-Imports accept up to 10 MB, 100 PDF pages, and 100,000 extracted characters. Add up to 200 reviewed topics at a time, each up to 200 characters. Expanded Word archives are limited to 30 MB. Scanned PDFs/photos need text recognition elsewhere first; older `.doc` files must be saved as `.docx`. Complex columns/tables may need manual cleanup. Reader code is bundled locally and loaded only when that document format is used; no document upload, external AI, or database is involved. See [THIRD-PARTY.md](THIRD-PARTY.md).
+Common filler such as repeated headers, page numbers, credits, objectives/outcomes, and reference-book blocks is filtered where recognised. Detection uses local rules, not AI or guaranteed understanding; layouts differ. **Review raw text instead** keeps the full extracted text available if a heading or useful topic was missed. Paste syllabus remains available.
+
+PDF/text imports accept up to **100 MB**; PDFs support **1,000 pages** and all formats support **3 million extracted characters**. Word `.docx` accepts **25 MB**, with an expanded archive limit of **100 MB**. Large handbooks can take longer on phones. Cancel stops PDF reading and prevents any import. Add up to **200 reviewed topics per course**, **2,000 topics per import**, and **30 subjects per planner**; each topic supports 200 characters. Import a semester at a time or reuse an existing subject name when appropriate. Scanned PDFs/photos need text recognition elsewhere first; older `.doc` files must be saved as `.docx`. Complex tables/columns may need manual correction. Readers are bundled locally and loaded only when needed; no document upload, external AI, or database is involved. See [THIRD-PARTY.md](THIRD-PARTY.md).
+
 
 
 Built by Abhijay while preparing for exams. This project is a work in progress, shaped by actual study needs and feedback.
