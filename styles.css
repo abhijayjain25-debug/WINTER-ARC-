@@ -21,7 +21,7 @@ nav button .nav-label{width:auto;flex:1;font-size:15px;text-align:left;white-spa
 
 body.test-mode{padding-top:48px}body.test-mode .sidebar{top:48px}body.test-mode .topbar{top:48px}
 
-.companion-option img:not(.pixel-pet){width:150px;height:150px;image-rendering:pixelated}.companion-stage.evolution-2::before{content:"✧";position:absolute;top:0;right:calc(50% - 72px);color:var(--companion-color);font-size:25px}.companion .evolution-caption{font-size:11px;margin:4px 0 10px}.evolution-path{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}.evolution-form{text-align:center;padding:12px 6px;border:1px solid var(--line);border-radius:12px}.evolution-form img{width:100%;height:130px;object-fit:contain;image-rendering:pixelated}.evolution-form small{display:block;color:var(--muted);font-size:11px}.evolution-form.locked img{opacity:.45;filter:grayscale(.7)}.evolution-form.current{border-color:var(--ice)}@media(max-width:600px){.companion-option img:not(.pixel-pet){width:110px;height:110px}.evolution-form img{height:95px}}
+.companion-option img:not(.pixel-pet){width:150px;height:150px;image-rendering:pixelated}.companion .evolution-caption{font-size:11px;margin:4px 0 10px}.evolution-path{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}.evolution-form{text-align:center;padding:12px 6px;border:1px solid var(--line);border-radius:12px}.evolution-form img{width:100%;height:130px;object-fit:contain;image-rendering:pixelated}.evolution-form small{display:block;color:var(--muted);font-size:11px}.evolution-form.locked img{opacity:.45;filter:grayscale(.7)}.evolution-form.current{border-color:var(--ice)}@media(max-width:600px){.companion-option img:not(.pixel-pet){width:110px;height:110px}.evolution-form img{height:95px}}
 
 @media(min-width:601px){.companion-picker{grid-template-columns:repeat(3,minmax(0,1fr))}.companion-option{padding:14px 8px}.companion-option img:not(.pixel-pet){width:130px;height:140px}.companion-option img.pixel-pet{width:100px;height:140px}}
 .companion-stage{height:176px}.companion-stage .pet:not(.pixel-pet){width:170px;height:170px}.evolution-form img{height:180px}.evolution-form.locked img{opacity:.7;filter:grayscale(.2)}@media(max-width:600px){.evolution-form img{height:110px}}
@@ -31,15 +31,10 @@ body.test-mode{padding-top:48px}body.test-mode .sidebar{top:48px}body.test-mode 
 /* Document previews stay contained on phones; cards are editable before import. */
 .import-courses{display:grid;gap:14px;margin:18px 0}.import-course{padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}.import-include{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}.import-include input{width:22px;height:22px;flex:0 0 22px;margin-top:3px}.import-include span{min-width:0;overflow-wrap:anywhere}.import-course textarea{min-height:145px;max-height:320px;resize:vertical}.import-course small{color:var(--muted)}
 
-/* Seven evolution stages use small, static pixel sigils; no extra canvas or animation loops. */
-.evolution-art{position:relative;display:inline-grid;place-items:center;isolation:isolate;--sigil-opacity:0;--sigil-scale:1;--aura-size:0px}
-.evolution-art img{position:relative;z-index:1;filter:drop-shadow(0 0 var(--aura-size) var(--companion-color,#98e2fc))}
-.evolution-art::before{content:'';position:absolute;z-index:2;pointer-events:none;width:6px;height:6px;top:12%;left:calc(50% - 3px);background:var(--companion-color,#98e2fc);box-shadow:-6px 6px var(--companion-color),6px 6px var(--companion-color),0 12px var(--companion-color);opacity:var(--sigil-opacity);transform:scale(var(--sigil-scale));image-rendering:pixelated}
-.evolution-art::after{content:'';position:absolute;z-index:0;pointer-events:none;inset:20% 12%;border:2px solid var(--companion-color,#98e2fc);border-radius:18%;opacity:var(--ring-opacity,0);transform:rotate(45deg)}
-.stage-1{--sigil-opacity:.65;--aura-size:3px}.stage-2{--sigil-opacity:1;--sigil-scale:1.3;--aura-size:5px;--ring-opacity:.15}
-.stage-3{--sigil-opacity:.85;--sigil-scale:1.5;--aura-size:7px;--ring-opacity:.22}.stage-4{--sigil-opacity:1;--sigil-scale:1.8;--aura-size:9px;--ring-opacity:.35}
-.stage-4::before,.stage-5::before,.stage-6::before{box-shadow:-6px 6px var(--companion-color),6px 6px var(--companion-color),0 12px var(--companion-color),-15px 24px var(--companion-color),15px 24px var(--companion-color)}
-.stage-5{--sigil-opacity:1;--sigil-scale:2;--aura-size:11px;--ring-opacity:.45}.stage-5::after{border-style:dashed;border-radius:0}
-.stage-6{--sigil-opacity:1;--sigil-scale:2.3;--aura-size:14px;--ring-opacity:.6}.stage-6::after{border-width:3px;border-radius:0}
+/* Anime forms use distinct generated artwork; originals retain lightweight aura upgrades. */
+.evolution-art{position:relative;display:inline-grid;place-items:center}
+.evolution-form.locked img{opacity:1;filter:none}
+.original-evolution.stage-1 img{filter:drop-shadow(0 0 5px var(--companion-color,#98e2fc))}
+.original-evolution.stage-2 img{filter:drop-shadow(0 0 10px var(--companion-color,#98e2fc))}
 .evolution-path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.evolution-form{min-width:0}.evolution-kind{display:block;font-size:11px;color:var(--muted);margin:4px 0}.evolution-form .evolution-art{width:100%}.evolution-form .evolution-art img{width:100%;object-fit:contain}
 @media(max-width:700px){.evolution-path{grid-template-columns:repeat(2,minmax(0,1fr))}}

@@ -1,10 +1,17 @@
-# Winter Arc v0.1.0 beta.3 — seven companion stages
+# Winter Arc v0.1.0 beta.4 — five illustrated anime forms
 
 A free, open-source study basecamp with winter pixel art and companions that evolve as you earn study XP. Customize it for entrance exams, college, or your own course.
 
 **Try it now:** https://wintercarc.vercel.app/
 
-## New in beta.3
+## New in beta.4
+
+- Ten new transparent pixel sprites: two additional forms each for Sung Jinwoo, Gojo, Ichigo, Asta and Naruto.
+- Five distinct anime forms at levels 1, 5, 10, 17 and 25. Existing sprites remain at 1, 10 and 25, including final-arc Gojo.
+- Replaces the beta.3 intermediate sigils with actual generated character artwork; no additional animation loops.
+- Original companions retain their classic three aura stages. XP requirements and saved progress stay unchanged.
+
+## New in beta.3 (superseded by beta.4)
 
 - Seven evolution stages for all 12 companions, at levels 1, 3, 6, 10, 15, 20, and 25.
 - Four new intermediate pixel-sigil and aura upgrades using the existing character artwork. Major anime sprite changes remain at levels 10 and 25.
@@ -33,7 +40,7 @@ Detection uses local rules and needs review. Scanned PDFs still need OCR elsewhe
 
 ## Run locally
 
-Download and extract **Winter-Arc-v0.1.0-beta.3.zip**. Install a current Node.js LTS release. Windows: open `Winter Arc/Start Winter Arc.cmd`. Other systems: run `node server.cjs` inside `Winter Arc/` and open http://127.0.0.1:47827. No `npm install`, database, API keys, or account needed.
+Download and extract **Winter-Arc-v0.1.0-beta.4.zip**. Install a current Node.js LTS release. Windows: open `Winter Arc/Start Winter Arc.cmd`. Other systems: run `node server.cjs` inside `Winter Arc/` and open http://127.0.0.1:47827. No `npm install`, database, API keys, or account needed.
 
 New users choose their own name and a blank or optional JEE/law template. The ZIP contains no owner's study progress.
 

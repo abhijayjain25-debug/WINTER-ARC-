@@ -4,7 +4,7 @@
 
 A free, open-source study planner with a winter pixel-art basecamp, evolving companions, focus sessions, and a syllabus you can make your own. Built for entrance exams, college courses, and independent study.
 
-**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.3)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
+**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.4)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
 
 No account, subscription, shared database, analytics, or API key. Your study records stay on your device. The hosted app is easiest to try on a phone; the local download requires Node.js.
 
@@ -12,7 +12,7 @@ No account, subscription, shared database, analytics, or API key. Your study rec
 
 ## What makes it different?
 
-- **A companion for your comeback.** Honest study earns XP, ranks, achievements, and seven companion stages at levels 1, 3, 6, 10, 15, 20 and 25.
+- **A companion for your comeback.** Honest study earns XP, ranks, achievements, and five distinct anime companion sprites at levels 1, 5, 10, 17 and 25.
 - **Your syllabus, not a fixed course.** Start blank or choose the JEE + CLAT/AILET template. Import a PDF, Word `.docx`, or text syllabus, review the topics, and assign them to your own course.
 - **Focus that counts.** Custom timers, completion chimes, daily/lifetime study totals, and offline session logging.
 - **A plan you can revise.** Editable chapters, weekly roadmaps, countdowns, practice checks, mock analysis, and a revision queue.
@@ -92,7 +92,7 @@ No study records are uploaded to GitHub, Vercel or a shared database. Hosting se
 - **Focus chamber:** choose 25, 30, 35, 40, 50 or 90 minutes, or custom whole minutes from 1 to 1440. Pause interruptions, then confirm actual study time and a work note. Log offline work without duplicating timer sessions.
 - **Sound:** the four-note completion chime is enabled by default. Preview it with Test chime or mute it separately from level-up sounds. Keep the tab open, unmuted and your device awake.
 - **Mock lab:** record your own exam or course test on its configured score scale, compare similar papers and analyse mistakes. Keep specific repairs in the reattempt queue.
-- **Companions:** choose Frost, Pip, Flurry, Byte, Ember (burgundy), Aurora (purple), Summit (green), Sung Jinwoo, Naruto, Gojo, Ichigo or Asta. Levels 3, 6, 10, 15, 20 and 25 unlock new stages automatically. Intermediate stages add pixel sigils and stronger auras using the current sprite; anime character artwork changes at levels 10 and 25. Original companions keep their sprite and evolve their effects. These are progression milestones for the planner, not a complete retelling of the series. The companion shares your level; selection does not change your XP. Add your own art through `custom.js` and `assets/` when forking.
+- **Companions:** choose Frost, Pip, Flurry, Byte, Ember (burgundy), Aurora (purple), Summit (green), Sung Jinwoo, Naruto, Gojo, Ichigo or Asta. Anime companions have five distinct generated sprites at levels 1, 5, 10, 17 and 25, with new outfits, weapons and power-up poses. Existing sprites remain at levels 1, 10 and 25. Original companions keep their sprite and evolve their effects. These are progression milestones for the planner, not a complete retelling of the series. The companion shares your level; selection does not change your XP. Add your own art through `custom.js` and `assets/` when forking.
 - **Appearance:** dark and light modes, glass surfaces, layered snowfall and gentle animations. The header snowflake toggles ambient motion. System reduced-motion preferences take priority. Quiet mode softens effects.
 - **Field guide:** editable preparation notes. Blank profiles receive a general guide; the JEE/law template has its own chapter plan. Template dates must be checked against official timetables.
 

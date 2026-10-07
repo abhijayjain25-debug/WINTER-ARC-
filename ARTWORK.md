@@ -4,6 +4,8 @@ Generated with the built-in image generation tool. Frost (`assets/winter-compani
 
 ## Saved assets and prompts
 
+The two additional forms per anime companion are documented in [Five-form expansion prompts](docs/EVOLUTION-ART-PROMPTS.md). They use the built-in image generator and preserve the original three sprites.
+
 ### assets/ember.png
 
 Use case: stylized-concept. Generate a new transparent full-body human chibi winter adventurer sprite for a study planner. Input image is STYLE REFERENCE ONLY: match Frost's beautiful detailed pixel graphics, large expressive anime eyes, chibi proportions, crisp square pixel clusters, rich layered pixel shading, substantial winter clothing and cute friendly face. Same front-facing centered full-body composition, entire head and boots visible, character about 75% of canvas height. True transparent background. No text, no UI, no scenery, no extra characters, no soft painted or vector look. Ember: warm brown skin, tousled dark brown hair, amber eyes, burgundy winter parka with cream fur hood resting around neck, ice-blue scarf, hiking backpack, fingerless dark gloves, lace-up snow boots. Confident friendly boy adventurer. Snowflake patch on sleeve.

@@ -1,0 +1,61 @@
+## Five-form expansion — built-in image generation
+
+Two additional transparent sprites each for the five anime companions. Original assets remain unchanged. Each input is a style/identity reference; new sprites are generated variants rather than CSS overlays. These planner milestones are anime-inspired and do not claim a strict canonical transformation order.
+
+### assets/jinwoo-early.png
+
+Built-in imagegen, transparent background, reference assets/jinwoo-2.png. Prompt: New newly awakened dungeon hunter, charcoal short-sleeve shirt, bandaged forearms, leather boots and blue-edged dagger; match detailed square-pixel chibi reference, full-body centered, transparent, no text or scenery.
+
+### assets/jinwoo-late.png
+
+Reference: assets/jinwoo-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Sung Jinwoo, Solo Leveling, Shadow Army Commander before full Shadow Monarch. Black windswept hair, violet glowing eyes, tailored black high-collar sleeveless combat tunic with dark silver shoulder armor and belted trousers; paired purple-edged daggers held down and outward, long dark waist sash, boots. Confident commanding pose, one small shadow soldier silhouette emerging behind his lower leg, compact violet shadow wisps. No crown or royal cape. Distinct from long-coat Awakened Hunter reference.
+
+### assets/gojo-early.png
+
+Reference: assets/gojo-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Satoru Gojo, Jujutsu Kaisen Hidden Inventory newly awakened Gojo. Youthful white fluffy hair, uncovered luminous blue Six Eyes, open navy student jacket over white shirt, dark trousers and shoes, floating slightly with toes down and arms relaxed outward; small bright red Reversal Red energy orb by raised fingers, exhilarated peaceful grin. No blindfold or sunglasses. New second-stage sprite between sunglasses student and blindfold adult.
+
+### assets/gojo-late.png
+
+Reference: assets/gojo-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Satoru Gojo, Jujutsu Kaisen Domain Expansion Unlimited Void. White spiky hair, uncovered radiant blue Six Eyes, black high-collar jacket and trousers, black boots, sharp confident smile. Iconic crossed index-and-middle-finger domain hand sign held before chest, other hand lifting his black blindfold away; compact blue-violet star-like cursed sparks and tiny floating pixels around shoulders, no background. Full body, distinctive pose. Not Hollow Purple and not final-arc white-trouser outfit; preserve that for existing final sprite.
+
+### assets/ichigo-early.png
+
+Reference: assets/ichigo-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Ichigo Kurosaki, Bleach Shikai Zangetsu combat form before Bankai. Orange spiky hair, black shihakusho kimono and wide flowing black hakama, white belt and tabi sandals; enormous broad cleaver-shaped Shikai Zangetsu sword with white bandaged handle balanced over shoulder, flowing white cloth strip near hilt. Focused confident face. No red aura or long fitted Bankai coat. Recognizable new second-stage silhouette, actual large Shikai cleaver not slim katana.
+
+### assets/ichigo-late.png
+
+Reference: assets/ichigo-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Ichigo Kurosaki, Bleach Hollow Mask Bankai. Orange spiky hair, fitted black Bankai long coat, black trousers and sandals, thin black Tensa Zangetsu katana held diagonally across body. Iconic white skeletal Hollow mask covers one half of face with angular dark-red stripes and narrow gold eye; other half of human face remains visible. Compact jagged red-black Getsuga energy along blade. Aggressive ready stance. No full monster transformation, horns or white body. New fourth-stage sprite before existing final.
+
+### assets/asta-early.png
+
+Reference: assets/asta-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Asta, Black Clover Demon-Dweller swordsman before Black Asta. Ash-white spiky hair, green eyes, black headband with gold Black Bulls motif, open black-and-gold Black Bulls short cape over white shirt, black trousers and tall brown-trimmed boots. Two distinct swords: broad weathered Demon-Slayer on back and slimmer Demon-Dweller blade held one-handed, faint green-white slash light near blade. Joyful determined grin, athletic stance. Completely human, no wings, horns, devil markings, red eye or demonic arm.
+
+### assets/asta-late.png
+
+Reference: assets/asta-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Asta, Black Clover berserk Black Asta anti-magic form before Devil Union. Ash-white hair, black headband, fierce determined face partly covered by angular black devil markings, one glowing red eye and one green eye. Tattered short Black Bulls cape and black combat trousers, boots, dark transformed right forearm gripping huge weathered Demon-Slayer sword. Larger ragged black wing on one side, prominent dark upward horn and smaller second horn, compact red-black anti-magic trails. Clearly stronger than reference Black Asta but no complete Devil Union armor. Cute detailed chibi pixel sprite, no gore.
+
+### assets/naruto-early.png
+
+Reference: assets/naruto-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Naruto Uzumaki, Naruto Shippuden standard ninja before Sage Mode. Spiky blonde hair, blue eyes, cheek whisker marks, Leaf forehead protector with dark band, black-and-orange zipped jacket, orange trousers, blue-black ninja sandals, leg pouch. Dynamic crouched fighting pose with small luminous blue Rasengan spinning in one hand and other arm behind. Cheerful determined grin. No sage cloak, sage eye makeup, scroll, golden chakra or red fox cloak. Distinct from existing childhood orange-blue outfit.
+
+### assets/naruto-late.png
+
+Reference: assets/naruto-2.png. Built-in imagegen, transparent background.
+
+Use case: stylized-concept. Asset: ONE new transparent full-body pixel character sprite for Winter Arc study planner. Input image: STYLE/IDENTITY reference only. Match its polished crisp square-pixel chibi art, large expressive anime head, compact body, rich pixel shading. Create distinct anime-inspired outfit and pose, not just a recolor of reference. Character about 80% square canvas height, centered with all hair, boots, weapons and effects visible and generous transparent margins. Genuine alpha transparent background. No scenery, floor, text, labels, watermark, UI, geometric frame or extra characters. Compact powers stay near character silhouette. Naruto Uzumaki, Naruto Shippuden controlled Nine-Tails chakra cloak, stylized intermediate power-up for planner. Recognizable human blonde-haired face and Leaf forehead protector, intensified whisker marks, orange-black ninja outfit and sandals visible through compact translucent fiery red-orange fox chakra around body, three curved fox-shaped chakra tails behind him, reddish eyes, determined controlled grin. Crouched ready pose, clawlike chakra outlines around hands. No gold KCM outfit, black magatama or Sage red coat, no skeletal monster, gore or sinister horror. Detailed cute full-body pixel sprite with contained flame-shaped pixel edges.

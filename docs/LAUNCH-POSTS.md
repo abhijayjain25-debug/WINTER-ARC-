@@ -4,7 +4,7 @@ These are drafts for Abhijay to review and post from his own accounts. Nothing h
 
 Live app: https://wintercarc.vercel.app/
 GitHub: https://github.com/abhijayjain25-debug/WINTER-ARC-
-Beta download: https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.3
+Beta download: https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.4
 Share image: `docs/images/social-preview.jpg`
 Feature tour: `docs/images/winter-arc-tour.mp4` (24-second screenshot tour, not live screen recording)
 
