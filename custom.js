@@ -17,11 +17,22 @@ const companions=[
 {id:'gojo',name:'Gojo',detail:'Six Eyes · Jujutsu Kaisen fan art',asset:'gojo-1.png',color:'#b5a3ff',forms:['Student','Limitless','Hollow Purple'],assets:['gojo-1.png','gojo-2.png','gojo-3.png']},
 {id:'ichigo',name:'Ichigo',detail:'Soul Reaper · Bleach fan art',asset:'ichigo-1.png',color:'#ff815f',forms:['Soul Reaper','Bankai','Hollow Bankai'],assets:['ichigo-1.png','ichigo-2.png','ichigo-3.png']},
 {id:'asta',name:'Asta',detail:'Never give up · Black Clover fan art',asset:'asta-1.png',color:'#ed7878',forms:['Magic Knight','Black Asta','Devil Union'],assets:['asta-1.png','asta-2.png','asta-3.png']}];
-const evolutionLevels=[1,10,25];
+const evolutionLevels=[1,3,6,10,15,20,25];
+const intermediateNames={
+ jinwoo:['First Awakening','Rising Hunter','Shadow Adept','Shadow Commander'],
+ naruto:['Chakra Spark','Growing Ninja','Sage Resolve','Kurama Resonance'],
+ gojo:['Six Eyes Spark','Infinity Insight','Limitless Focus','Purple Resonance'],
+ ichigo:['Spiritual Spark','Rising Reaper','Bankai Resolve','Hollow Resonance'],
+ asta:['Unyielding Spark','Rising Knight','Anti-Magic Resolve','Devil Resonance']
+};
 function companionForm(id,level){
- const p=companions.find(p=>p.id===id)||companions[0],tier=level>=25?2:level>=10?1:0;
+ const p=companions.find(p=>p.id===id)||companions[0];
+ const tier=Math.max(0,evolutionLevels.findLastIndex(at=>level>=at)),artTier=level>=25?2:level>=10?1:0;
  const colors={frost:'#8ddaff',penguin:'#8ddaff',fox:'#efc2f6',robot:'#98e8dc',ember:'#e6899c',aurora:'#c69aee',summit:'#97cc8a'};
- return {...p,tier,asset:p.assets?.[tier]||p.asset,form:(p.forms||['Trail companion','Awakened aura','Ascended aura'])[tier],color:p.color||colors[p.id],next:evolutionLevels[tier+1]||null};
+ const major=p.forms||['Trail companion','Awakened aura','Ascended aura'];
+ const middle=intermediateNames[p.id]||['First Spark','Trailblazer','Rune Keeper','Summit Guardian'];
+ const forms=[major[0],middle[0],middle[1],major[1],middle[2],middle[3],major[2]];
+ return {...p,tier,artTier,asset:p.assets?.[artTier]||p.asset,form:forms[tier],color:p.color||colors[p.id],next:evolutionLevels[tier+1]||null,major:[0,3,6].includes(tier)};
 }
 // Original planner mottos, not attributed quotations. Date-seeded shuffle needs no storage.
 const quotes=[

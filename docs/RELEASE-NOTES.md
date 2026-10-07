@@ -1,8 +1,15 @@
-# Winter Arc v0.1.0 beta.2 — college handbook imports
+# Winter Arc v0.1.0 beta.3 — seven companion stages
 
 A free, open-source study basecamp with winter pixel art and companions that evolve as you earn study XP. Customize it for entrance exams, college, or your own course.
 
 **Try it now:** https://wintercarc.vercel.app/
+
+## New in beta.3
+
+- Seven evolution stages for all 12 companions, at levels 1, 3, 6, 10, 15, 20, and 25.
+- Four new intermediate pixel-sigil and aura upgrades using the existing character artwork. Major anime sprite changes remain at levels 10 and 25.
+- Evolution celebrations at every new milestone, with a complete preview path.
+- Existing XP, level requirements, and saved progress remain unchanged. Effects use lightweight static CSS.
 
 ## New in beta.2
 
@@ -26,7 +33,7 @@ Detection uses local rules and needs review. Scanned PDFs still need OCR elsewhe
 
 ## Run locally
 
-Download and extract **Winter-Arc-v0.1.0-beta.1.zip**. Install a current Node.js LTS release. Windows: open `Winter Arc/Start Winter Arc.cmd`. Other systems: run `node server.cjs` inside `Winter Arc/` and open http://127.0.0.1:47827. No `npm install`, database, API keys, or account needed.
+Download and extract **Winter-Arc-v0.1.0-beta.3.zip**. Install a current Node.js LTS release. Windows: open `Winter Arc/Start Winter Arc.cmd`. Other systems: run `node server.cjs` inside `Winter Arc/` and open http://127.0.0.1:47827. No `npm install`, database, API keys, or account needed.
 
 New users choose their own name and a blank or optional JEE/law template. The ZIP contains no owner's study progress.
 

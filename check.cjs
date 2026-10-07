@@ -73,12 +73,15 @@ assert.notEqual(X.dailyQuote('2026-10-01'),X.dailyQuote('2026-09-30'));
 assert.equal(X.dailyQuote('2026-10-01'),X.dailyQuote('2026-10-01'));
 assert.equal(new Set(Array.from({length:20},(_,i)=>X.dailyQuote(C.addDays('2026-10-01',i)))).size,20);
 for(const p of X.companions){
- for(const [level,tier] of [[1,0],[9,0],[10,1],[24,1],[25,2]]){
+ for(const [level,tier] of [[1,0],[2,0],[3,1],[5,1],[6,2],[9,2],[10,3],[14,3],[15,4],[19,4],[20,5],[24,5],[25,6],[50,6]]){
   const form=X.companionForm(p.id,level);assert.equal(form.tier,tier);
   assert(fs.existsSync(__dirname+'/assets/'+form.asset),'Missing sprite: '+form.asset);
  }
  const saved=JSON.parse(JSON.stringify(custom));saved.settings.companion=p.id;assert.doesNotThrow(()=>C.validate(saved));
 }
+assert.deepEqual(X.evolutionLevels,[1,3,6,10,15,20,25]);
+for(const p of X.companions){assert.equal(new Set(X.evolutionLevels.map(at=>X.companionForm(p.id,at).form)).size,7);for(let i=0;i<7;i++)assert.equal(X.companionForm(p.id,X.evolutionLevels[i]).next,X.evolutionLevels[i+1]||null);}
+assert.equal(X.companionForm('jinwoo',20).asset,'jinwoo-2.png');
 assert.equal(X.companionForm('jinwoo',25).asset,'jinwoo-3.png');
 assert.equal(X.companionForm('naruto',10).form,'Sage Mode');
 console.log('PASS: daily quote preservation, stable shuffled rotation, all companion assets and evolution boundaries.');
