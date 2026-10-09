@@ -12,15 +12,15 @@ const companions=[
 {id:'ember',name:'Ember',detail:'A warm-hearted winter explorer',asset:'ember.png'},
 {id:'aurora',name:'Aurora',detail:'A curious scholar of the snow',asset:'aurora.png'},
 {id:'summit',name:'Summit',detail:'A steady climber, one step at a time',asset:'summit.png'},
-{id:'jinwoo',name:'Sung Jinwoo',detail:'Hunter to Shadow Monarch · Solo Leveling fan art',asset:'jinwoo-1.png',color:'#b987ff',forms:['E-rank Hunter','Awakened Hunter','Shadow Monarch'],assets:['jinwoo-1.png','jinwoo-2.png','jinwoo-3.png']},
-{id:'naruto',name:'Naruto',detail:'Ninja to Kurama Chakra Mode · Naruto fan art',asset:'naruto-1.png',color:'#ffb95c',forms:['Young Ninja','Sage Mode','Kurama Chakra Mode'],assets:['naruto-1.png','naruto-2.png','naruto-3.png']},
+{id:'jinwoo',name:'Sung Jinwoo',detail:'Red Gate · S-rank · Shadow Monarch · Solo Leveling fan art',asset:'jinwoo-1-v2.png',color:'#b987ff',forms:['E-rank Hunter','Red Gate Hunter','S-rank Hunter','Shadow Sovereign','Shadow Monarch'],assets:['jinwoo-1-v2.png','jinwoo-red-gate.png','jinwoo-s-rank.png','jinwoo-shadow-sovereign.png','jinwoo-3-v2.png']},
+{id:'naruto',name:'Naruto',detail:'Rasenshuriken · Sage Mode · Kurama Chakra Mode · Naruto fan art',asset:'naruto-1.png',color:'#ffb95c',forms:['Young Ninja','Shippuden Ninja','Rasenshuriken','Sage Mode','Kurama Chakra Mode'],assets:['naruto-1.png','naruto-early.png','naruto-rasenshuriken.png','naruto-2.png','naruto-3.png']},
 {id:'gojo',name:'Gojo',detail:'Six Eyes · Jujutsu Kaisen fan art',asset:'gojo-1.png',color:'#b5a3ff',forms:['Student','Limitless','Hollow Purple'],assets:['gojo-1.png','gojo-2.png','gojo-3.png']},
 {id:'ichigo',name:'Ichigo',detail:'Soul Reaper · Bleach fan art',asset:'ichigo-1.png',color:'#ff815f',forms:['Soul Reaper','Bankai','Hollow Bankai'],assets:['ichigo-1.png','ichigo-2.png','ichigo-3.png']},
 {id:'asta',name:'Asta',detail:'Never give up · Black Clover fan art',asset:'asta-1.png',color:'#ed7878',forms:['Magic Knight','Black Asta','Devil Union'],assets:['asta-1.png','asta-2.png','asta-3.png']}];
 const evolutionLevels=[1,5,10,17,25];
-const newForms={jinwoo:['Dungeon Hunter','Shadow Commander'],naruto:['Shippuden Ninja','Nine-Tails Cloak'],gojo:['Awakened Six Eyes','Unlimited Void'],ichigo:['Shikai Zangetsu','Hollow Mask Bankai'],asta:['Demon-Dweller','Berserk Black Asta']};
+const newForms={gojo:['Awakened Six Eyes','Unlimited Void'],ichigo:['Shikai Zangetsu','Hollow Mask Bankai'],asta:['Demon-Dweller','Berserk Black Asta']};
 for(const p of companions){
- if(!p.assets)continue;
+ if(!p.assets||p.forms.length===5)continue;
  p.forms=[p.forms[0],newForms[p.id][0],p.forms[1],newForms[p.id][1],p.forms[2]];
  p.assets=[p.assets[0],p.id+'-early.png',p.assets[1],p.id+'-late.png',p.assets[2]];
 }

@@ -4,6 +4,8 @@ Generated with the built-in image generation tool. Frost (`assets/winter-compani
 
 ## Saved assets and prompts
 
+Current Jinwoo and Naruto changes are documented in [Character revision prompts](docs/CHARACTER-REVISION-PROMPTS.md). Earlier sprites remain available as optional assets; the active mapping lives in `custom.js`.
+
 The two additional forms per anime companion are documented in [Five-form expansion prompts](docs/EVOLUTION-ART-PROMPTS.md). They use the built-in image generator and preserve the original three sprites.
 
 ### assets/ember.png

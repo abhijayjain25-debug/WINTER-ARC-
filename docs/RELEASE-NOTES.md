@@ -1,8 +1,15 @@
-# Winter Arc v0.1.0 beta.4 — five illustrated anime forms
+# Winter Arc v0.1.0 beta.5 — Jinwoo aura and Naruto progression
 
 A free, open-source study basecamp with winter pixel art and companions that evolve as you earn study XP. Customize it for entrance exams, college, or your own course.
 
 **Try it now:** https://wintercarc.vercel.app/
+
+## New in beta.5
+
+- Five new Sung Jinwoo pixel sprites with mature proportions, narrow serious eyes and stronger shadow presence throughout the path.
+- Level 5: Red Gate brown winter coat and white fur collar. Level 10: S-rank black coat and white shirt, wrapped in purple shadow aura. Level 17: all-black hands-in-pockets pose, glowing cyan-violet eyes and purple shadow flames. Level 25: redesigned Shadow Monarch armor and cape.
+- Naruto gets a newly illustrated Rasenshuriken at level 10. Existing Sage Mode moves to level 17; Kurama Chakra Mode at 25 stays unchanged.
+- XP, save data, unlock levels, other companions and animation performance remain unchanged. Effects are part of the generated PNG artwork.
 
 ## New in beta.4
 
@@ -40,7 +47,7 @@ Detection uses local rules and needs review. Scanned PDFs still need OCR elsewhe
 
 ## Run locally
 
-Download and extract **Winter-Arc-v0.1.0-beta.4.zip**. Install a current Node.js LTS release. Windows: open `Winter Arc/Start Winter Arc.cmd`. Other systems: run `node server.cjs` inside `Winter Arc/` and open http://127.0.0.1:47827. No `npm install`, database, API keys, or account needed.
+Download and extract **Winter-Arc-v0.1.0-beta.5.zip**. Install a current Node.js LTS release. Windows: open `Winter Arc/Start Winter Arc.cmd`. Other systems: run `node server.cjs` inside `Winter Arc/` and open http://127.0.0.1:47827. No `npm install`, database, API keys, or account needed.
 
 New users choose their own name and a blank or optional JEE/law template. The ZIP contains no owner's study progress.
 

@@ -85,12 +85,16 @@ for(const p of X.companions){
   }
  }
  const saved=JSON.parse(JSON.stringify(custom));saved.settings.companion=p.id;assert.doesNotThrow(()=>C.validate(saved));
- if(p.assets){assert.equal(X.companionForm(p.id,10).asset,p.id+'-2.png');assert.equal(X.companionForm(p.id,25).asset,p.id+'-3.png');}
+ if(p.assets&&!['jinwoo','naruto'].includes(p.id)){assert.equal(X.companionForm(p.id,10).asset,p.id+'-2.png');assert.equal(X.companionForm(p.id,25).asset,p.id+'-3.png');}
 }
-assert.equal(X.companionForm('jinwoo',5).asset,'jinwoo-early.png');
-assert.equal(X.companionForm('jinwoo',17).asset,'jinwoo-late.png');
+assert.deepEqual(X.evolutionLevels.map(at=>X.companionForm('jinwoo',at).form),['E-rank Hunter','Red Gate Hunter','S-rank Hunter','Shadow Sovereign','Shadow Monarch']);
+assert.deepEqual(X.evolutionLevels.map(at=>X.companionForm('jinwoo',at).asset),['jinwoo-1-v2.png','jinwoo-red-gate.png','jinwoo-s-rank.png','jinwoo-shadow-sovereign.png','jinwoo-3-v2.png']);
+assert.deepEqual(X.evolutionLevels.map(at=>X.companionForm('naruto',at).form),['Young Ninja','Shippuden Ninja','Rasenshuriken','Sage Mode','Kurama Chakra Mode']);
+assert.equal(X.companionForm('naruto',10).asset,'naruto-rasenshuriken.png');
+assert.equal(X.companionForm('naruto',17).asset,'naruto-2.png');
+assert.equal(X.companionForm('naruto',25).asset,'naruto-3.png');
 assert.equal(X.companionForm('frost',5).next,10);
-assert.equal(X.companionForm('naruto',10).form,'Sage Mode');
+assert.equal(X.companionForm('naruto',17).form,'Sage Mode');
 console.log('PASS: daily quote preservation, stable shuffled rotation, all companion assets and evolution boundaries.');
 
 const timeHistory={sessions:[{date:'2026-09-30',minutes:25},{date:'2026-09-30',minutes:25},{date:'2026-09-29',minutes:90}]};
