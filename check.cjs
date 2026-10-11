@@ -109,3 +109,4 @@ require('./motion-check.cjs');
 require('./syllabus-check.cjs');
 require('./mobile-check.cjs');
 require('./plan-check.cjs');
+require('./server-check.cjs');

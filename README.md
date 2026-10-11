@@ -4,7 +4,7 @@
 
 A free, open-source study planner with a winter pixel-art basecamp, evolving companions, focus sessions, and a syllabus you can make your own. Built for entrance exams, college courses, and independent study.
 
-**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.6)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
+**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.7)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
 
 No account, subscription, shared database, analytics, or API key. Your study records stay on your device. The hosted app is easiest to try on a phone; the local download requires Node.js.
 

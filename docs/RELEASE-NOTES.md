@@ -1,8 +1,17 @@
-# Winter Arc v0.1.0 beta.6 — The exam sprint
+# Winter Arc v0.1.0 beta.7 — Local planner fix
 
 A free, open-source study basecamp with winter pixel art and companions that evolve as you earn study XP. Customize it for entrance exams, college, or your own course.
 
 **Try it now:** https://wintercarc.vercel.app/
+
+## Fixed in beta.7
+
+- Fixes blank pages in the local download: the server now serves the new Exam sprint scripts and stylesheet.
+- Public root assets are read from the entry-page declarations to prevent forgotten server allowlist entries.
+- Adds actual HTTP checks for every entry-page asset, MIME types, health, HEAD requests and blocked private paths.
+- No save format, study history, XP or progression changes.
+
+If updating an already-running local copy, restart its server (or restart Windows) before opening the updated app.
 
 ## New in beta.6
 
