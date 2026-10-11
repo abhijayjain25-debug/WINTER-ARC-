@@ -1,8 +1,19 @@
-# Winter Arc v0.1.0 beta.5 — Jinwoo aura and Naruto progression
+# Winter Arc v0.1.0 beta.6 — The exam sprint
 
 A free, open-source study basecamp with winter pixel art and companions that evolve as you earn study XP. Customize it for entrance exams, college, or your own course.
 
 **Try it now:** https://wintercarc.vercel.app/
+
+## New in beta.6
+
+- An optional monochrome Exam sprint with original manga-style winter cover art, daily instructions, weekly calendar and full Markdown export.
+- A 102-day example plan from October 11 to the January 20 planning target: Class 12 priorities first, prerequisite bridges, all 42 selected JEE chapters, law mock/analysis/repair/retest cycles, and later JEE papers.
+- A gradual ramp from a 1–3 hour baseline, one-click ten-minute starts, lighter recovery days, a 35-minute fallback and no automatic missed-task backlog.
+- Editable blocks, custom additions, reversible omissions, dates and pace; actual study logs link to planned blocks without awarding XP for checkmarks.
+- Uses existing saves and backups, preserves profiles/history/XP, and shows the current sprint target on Basecamp after activation.
+- Phone layout checks, date/coverage/ramp/save/logging regression checks, and no new dependencies or animation loops.
+
+JEE dates remain editable planning targets. Check the latest official timetable and syllabus; chapter coverage does not guarantee marks. Read [the Exam sprint guide](docs/EXAM-SPRINT.md).
 
 ## New in beta.5
 

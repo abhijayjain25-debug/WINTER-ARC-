@@ -1,0 +1,45 @@
+/* Run with node plan-check.cjs. Date, ramp, coverage and save regression checks. */
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const C=require('./core.js'),P=require('./plan.js');
+const config=P.defaults('2026-10-11'),days=P.generate(config);
+assert.equal(days.length,102);
+assert.equal(days[0].date,'2026-10-11');assert.equal(days.at(-1).date,'2027-01-20');
+assert.equal(new Set(days.flatMap(d=>d.tasks.map(t=>t.id))).size,days.flatMap(d=>d.tasks).length);
+assert.ok(days[0].minutes<=130,'first day fits the current baseline');
+assert.ok(days[6].minutes<days[35].minutes,'workload builds gradually');
+assert.ok(days.every(d=>Number.isInteger(d.minutes)&&d.minutes<=420),'daily load stays bounded');
+assert.ok(days.filter(d=>d.rest).every(d=>d.minutes<=220),'lighter days remain lighter');
+assert.ok(days.flatMap(d=>d.tasks).filter(t=>t.kind==='study').slice(0,20).every(t=>t.minutes<=30));
+assert.ok(days.find(d=>d.date===config.clat).tasks.some(t=>t.kind==='exam'));
+assert.ok(days.find(d=>d.date===config.ailet).tasks.some(t=>t.kind==='exam'));
+assert.ok(!days.filter(d=>d.date>config.ailet).flatMap(d=>d.tasks).some(t=>t.subject==='Law'));
+assert.ok(!days.slice(-4).flatMap(d=>d.tasks).some(t=>t.kind==='mock'),'no final JEE full mocks');
+assert.ok(!days.filter(d=>d.date>='2026-12-02'&&d.date<'2026-12-06').flatMap(d=>d.tasks).some(t=>t.kind==='mock'),'CLAT taper has no full mocks');
+const box={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/data.js','utf8'),box);
+const titles=days.flatMap(d=>d.tasks.map(t=>t.title)).join('\n');
+for(const chapter of box.window.WA_DATA.chapters.filter(c=>c.subject!=='Law')){
+ const aliases={'Units, Dimensions & Measurement':'Units, Dimensions & Measurement','Some Basic Concepts (Mole Concept)':'Mole Concept'};
+ assert.ok(titles.includes(aliases[chapter.name]||chapter.name),'missing priority chapter: '+chapter.name);
+}
+const first=days[0].tasks.find(t=>t.kind==='study');config.overrides.push({...first,title:'My edited first task',minutes:15,steps:'Use my notebook page 10.'});config.completed.push(first.id);
+assert.equal(P.generate(config)[0].tasks.find(t=>t.id===first.id).title,'My edited first task');
+assert.equal(P.validate(JSON.parse(JSON.stringify(config))).completed[0],first.id);
+assert.ok(P.markdown(config).includes('My edited first task'));
+assert.ok(P.markdown(config).includes('- [x] **Physics'));
+assert.ok(!P.generate({...config,omitted:[first.id]})[0].tasks.some(t=>t.id===first.id),'omitted blocks leave the daily load and can be restored');
+for(const bad of [{...config,end:'2026-01-01'},{...config,pace:1000},{...config,overrides:[{...first,minutes:-5}]},{...config,completed:['bad-id']},{...config,clat:'2026-12-20',ailet:'2026-12-13'}])assert.throws(()=>P.validate(bad));
+const low=P.generate({...P.defaults('2026-10-11'),pace:70});assert.ok(low[30].minutes<days[30].minutes);assert.equal(low.find(d=>d.tasks.some(t=>t.kind==='mock')).tasks.find(t=>t.kind==='mock').minutes,120);
+assert.equal(P.generate({...P.defaults('2026-12-31'),end:'2027-01-03'}).length,4);
+const D=JSON.parse(JSON.stringify(box.window.WA_DATA));
+const saved={version:1,settings:{name:'Test',hours:8,dailyGoal:300,theme:'dark',motion:false,sound:false,jeeDate:'2027-01-20',clatDate:'2026-12-06',ailetDate:'2026-12-13',jeeConfirmed:false,notes:''},chapters:D.chapters,weeks:D.weeks,quests:[],sessions:[],mocks:[],errors:[],ledger:[],rewards:D.rewards,redemptions:[],badges:[],studyPlan:config};
+assert.doesNotThrow(()=>C.validate(JSON.parse(JSON.stringify(saved))));
+assert.throws(()=>C.validate({...saved,studyPlan:{...config,pace:999}}));
+const today=C.day(),plannedId='plan-'+today+'-p';let submit;
+const app=fs.readFileSync(__dirname+'/app.js','utf8'),source=app.slice(app.indexOf('function logSession('),app.indexOf('\nfunction ',app.indexOf('function logSession(')+1));
+const context={C,state:saved,subjects:()=>['Physics','Chemistry','Maths','Law'],timer:{id:'timed-plan-test',subject:'Physics',chapterId:'',planTaskId:plannedId,planTaskTitle:'Planned study'},focusDraft:{},pauseTimer(){},timerElapsed:()=>600000,checkEditable(){},modal:(title,html,fn)=>submit=fn,select:()=>'',field:()=>'',area:()=>'',actions:()=>'',assert:(ok,message)=>assert.ok(ok,message),uid:()=>'',saveTimer(){},changed(){},toast(){},render(){}};
+vm.runInNewContext(source,context);context.logSession(true);
+submit(new Map([['minutes','10'],['date',today],['subject','Physics'],['note','Solved a fresh set.']]));
+assert.equal(saved.sessions.at(-1).planTaskId,plannedId,'the actual logging flow links the planned task');
+assert.equal(C.totalXP(saved),10,'only the actual minutes award focus XP');assert.equal(context.timer,null);assert.equal(context.focusDraft.planTaskId,undefined,'the next manual session must not inherit the plan link');
+assert.doesNotThrow(()=>C.validate(saved));
+console.log('PASS: 102 dated days, gradual workload, 42 priority chapters, law/JEE taper, edits, validation and exports.');

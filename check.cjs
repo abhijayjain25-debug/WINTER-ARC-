@@ -3,6 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const vm=require('node:vm');
 const C=require('./core.js');
+require('./plan.js');
 const box={window:{}};vm.runInNewContext(fs.readFileSync(__dirname+'/data.js','utf8'),box);
 const D=JSON.parse(JSON.stringify(box.window.WA_DATA));
 const s={version:1,settings:{name:'Test',hours:8,dailyGoal:300,theme:'light',motion:true,sound:false,jeeDate:'2027-01-20',clatDate:'2026-12-06',ailetDate:'2026-12-13',jeeConfirmed:false,notes:''},chapters:D.chapters,weeks:D.weeks,quests:[],sessions:[],mocks:[],errors:[],ledger:[],rewards:D.rewards,redemptions:[],badges:[]};
@@ -107,3 +108,4 @@ require('./motion-check.cjs');
 
 require('./syllabus-check.cjs');
 require('./mobile-check.cjs');
+require('./plan-check.cjs');

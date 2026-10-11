@@ -4,7 +4,7 @@
 
 A free, open-source study planner with a winter pixel-art basecamp, evolving companions, focus sessions, and a syllabus you can make your own. Built for entrance exams, college courses, and independent study.
 
-**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.5)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
+**[Try Winter Arc in your browser](https://wintercarc.vercel.app/)** · **[Download the Windows/local beta](https://github.com/abhijayjain25-debug/WINTER-ARC-/releases/tag/v0.1.0-beta.6)** · **[Report a bug](https://github.com/abhijayjain25-debug/WINTER-ARC-/issues/new/choose)** · **[Ideas & feedback](https://github.com/abhijayjain25-debug/WINTER-ARC-/discussions)**
 
 No account, subscription, shared database, analytics, or API key. Your study records stay on your device. The hosted app is easiest to try on a phone; the local download requires Node.js.
 
@@ -15,6 +15,7 @@ No account, subscription, shared database, analytics, or API key. Your study rec
 - **A companion for your comeback.** Honest study earns XP, ranks, achievements, and five distinct anime companion sprites at levels 1, 5, 10, 17 and 25.
 - **Your syllabus, not a fixed course.** Start blank or choose the JEE + CLAT/AILET template. Import a PDF, Word `.docx`, or text syllabus, review the topics, and assign them to your own course.
 - **Focus that counts.** Custom timers, completion chimes, daily/lifetime study totals, and offline session logging.
+- **A small start, a complete exam sprint.** Optional monochrome JEE/law daily plan, weekly calendar, ten-minute starts, gradual workload, rest and mock-repair cycles. Edit blocks, dates and pace; export the full plan. [How it works](docs/EXAM-SPRINT.md).
 - **A plan you can revise.** Editable chapters, weekly roadmaps, countdowns, practice checks, mock analysis, and a revision queue.
 - **A stronger week.** Log workouts, set a measurable weekly goal, and earn optional rewards through actual effort.
 - **Your data belongs to you.** Browser storage or a user-selected local JSON file in supported browsers, with export/restore backups. No automatic cloud sync.
